@@ -66,9 +66,11 @@ if uploaded_file:
     # LLM
     # -------------------------------
     llm = ChatGroq(
-        model="llama3-70b-8192",
-        temperature=0
+    model="llama-3.1-8b-instant",
+    temperature=0,
+    max_tokens=512
     )
+
 
     # -------------------------------
     # Prompt
@@ -186,6 +188,7 @@ if uploaded_file:
 #         result = qa.invoke({"query": query + " Answer briefly."})
 #         st.subheader("Answer")
 #         st.write(result["result"])
+
 
 
 
