@@ -1,11 +1,10 @@
 import os
 import streamlit as st
 
-from langchain_groq import ChatGroq
+from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-# from langchain.chains import RetrievalQA
-from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain_groq import ChatGroq
 
 # -----------------------------
 # Streamlit UI
@@ -123,5 +122,6 @@ if query:
 #         result = qa(query)
 #         st.subheader("Answer")
 #         st.write(result["result"])
+
 
 
