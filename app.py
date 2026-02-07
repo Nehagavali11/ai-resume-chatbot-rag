@@ -15,7 +15,9 @@ st.title("⚡ Resume Q&A Chatbot (Free & Fast)")
 # -----------------------------
 # Load Groq API Key
 # -----------------------------
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 if not GROQ_API_KEY:
     st.error("Groq API key not found. Set GROQ_API_KEY.")
@@ -120,3 +122,4 @@ if query:
 #         result = qa(query)
 #         st.subheader("Answer")
 #         st.write(result["result"])
+
