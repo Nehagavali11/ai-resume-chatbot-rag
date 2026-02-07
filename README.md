@@ -45,9 +45,13 @@ This application allows users or recruiters to ask natural language questions ab
 <img width="1871" height="792" alt="Screenshot (805)" src="https://github.com/user-attachments/assets/7b87a9fe-e923-4d5c-ad9b-94ec0514df7d" />
 
 ---
+## Live app
+https://ai-resume-chatbot-rag-m4wnthlxbmkdrtwqcl4sdz.streamlit.app/
+---
 ## 📦 Installation
 
 ```bash
 pip install langchain langchain-core langchain-community langchain-groq faiss-cpu sentence-transformers streamlit
+
 
 
