@@ -39,7 +39,8 @@ This application allows users or recruiters to ask natural language questions ab
 
 ---
 ## SnapShot
-<img width="1802" height="757" alt="Screenshot (806)" src="https://github.com/user-attachments/assets/d5eeed89-ba08-4785-9584-3a021885e784" />
+<img width="1744" height="863" alt="Screenshot (807)" src="https://github.com/user-attachments/assets/b7e4521d-7ab8-47f2-b120-603ac2c69b41" />
+
 
 <img width="1871" height="792" alt="Screenshot (805)" src="https://github.com/user-attachments/assets/7b87a9fe-e923-4d5c-ad9b-94ec0514df7d" />
 
@@ -48,4 +49,5 @@ This application allows users or recruiters to ask natural language questions ab
 
 ```bash
 pip install langchain langchain-core langchain-community langchain-groq faiss-cpu sentence-transformers streamlit
+
 
