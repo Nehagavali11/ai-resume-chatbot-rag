@@ -38,8 +38,14 @@ This application allows users or recruiters to ask natural language questions ab
 - **Frontend:** Streamlit  
 
 ---
+## SnapShot
+<img width="1802" height="757" alt="Screenshot (806)" src="https://github.com/user-attachments/assets/d5eeed89-ba08-4785-9584-3a021885e784" />
 
+<img width="1871" height="792" alt="Screenshot (805)" src="https://github.com/user-attachments/assets/7b87a9fe-e923-4d5c-ad9b-94ec0514df7d" />
+
+---
 ## 📦 Installation
 
 ```bash
 pip install langchain langchain-core langchain-community langchain-groq faiss-cpu sentence-transformers streamlit
+
