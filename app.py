@@ -74,54 +74,5 @@ if query:
 
 
 
-# import streamlit as st
-# from langchain_community.vectorstores import FAISS
-# from langchain_community.embeddings import HuggingFaceEmbeddings
-# from langchain_google_genai import ChatGoogleGenerativeAI
-# # from langchain.chains.retrieval_qa import RetrievalQA
-# from langchain.chains import RetrievalQA
-# import os
-
-# st.set_page_config(page_title="Enterprise RAG System")
-
-# st.title("📄 Enterprise Document Q&A System")
-
-# # Load embeddings
-# embeddings = HuggingFaceEmbeddings(
-#     model_name="sentence-transformers/all-MiniLM-L6-v2"
-# )
-
-# # Load FAISS index
-# db = FAISS.load_local(
-#     "faiss_index",
-#     embeddings,
-#     allow_dangerous_deserialization=True
-# )
-
-# # Load LLM (Gemini)
-# llm = ChatGoogleGenerativeAI(
-#     model="models/gemini-1.5-flash",
-#     google_api_key=os.getenv("GOOGLE_API_KEY"),
-#     convert_system_message_to_human=True,
-#     temperature=0.2
-# )
-
-
-
-# # RAG chain
-# qa = RetrievalQA.from_chain_type(
-#     llm=llm,
-#     retriever=db.as_retriever(search_kwargs={"k": 2}),
-#     return_source_documents=True
-# )
-
-# query = st.text_input("Ask a question from the document")
-
-# if query:
-#     with st.spinner("Thinking..."):
-#         result = qa(query)
-#         st.subheader("Answer")
-#         st.write(result["result"])
-
 
 
