@@ -58,7 +58,8 @@ if uploaded_file:
 
         # Vector DB
         vectorstore = FAISS.from_documents(chunks, embeddings)
-        retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+        retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
+
 
     st.success("✅ PDF processed successfully")
 
@@ -76,18 +77,19 @@ if uploaded_file:
     # Prompt
     # -------------------------------
     prompt = ChatPromptTemplate.from_template(
-        """
-        You are an AI assistant.
-        Answer the question using ONLY the context below.
-        Keep the answer short and clear.
+    """
+    Answer the question ONLY using the context below.
+    If the answer is not present, say "Not found in document".
+    Keep the answer under 4 lines.
 
-        Context:
-        {context}
+    Context:
+    {context}
 
-        Question:
-        {question}
-        """
+    Question:
+    {question}
+    """
     )
+
 
     # -------------------------------
     # RAG Chain (NO RetrievalQA)
@@ -188,6 +190,7 @@ if uploaded_file:
 #         result = qa.invoke({"query": query + " Answer briefly."})
 #         st.subheader("Answer")
 #         st.write(result["result"])
+
 
 
 
